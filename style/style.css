@@ -1,1 +1,39 @@
-/*  */
+:root {
+  /** zet hier vars neer op deze manier: --<var-naam>: <var-inhoud> **/
+  --main: rgb(255, 255, 255);
+  --secondary: rgb(220, 220, 220);
+  --accent2: rgb(255, 127.5, 0);
+
+  --text-light: rgb(255, 255, 255);
+  --text-dark: rgb(0, 0, 0);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  height: 20%;
+  width: 100vw;
+  background-color: var(--accent2);
+}
+main {
+  height: 70%;
+  width: 100%;
+  background-color: var(--main);
+}
+footer {
+  height: 10%;
+  width: 100vw;
+  background-color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
