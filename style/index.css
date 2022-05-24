@@ -158,3 +158,13 @@ img {
     filter: blur(0);
   }
 }
+header ul li {
+  display: inline;
+  margin-left: 150px;
+  font-size: 20px;
+}
+header ul {
+  min-width: 50%;
+}
+header {
+}
