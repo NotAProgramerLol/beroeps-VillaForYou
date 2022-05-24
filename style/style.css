@@ -1,40 +1,46 @@
 /*! senna is gay */
 :root {
-  /** zet hier vars neer op deze manier: --<var-naam>: <var-inhoud> **/
-  --main: rgb(255, 255, 255);
-  --secondary: rgb(220, 220, 220);
-  --accent2: rgb(255, 127.5, 0);
+	/** zet hier vars neer op deze manier: --<var-naam>: <var-inhoud> **/
+	--main: rgb(255, 255, 255);
+	--secondary: rgb(220, 220, 220);
+	--accent2: rgb(255, 127.5, 0);
 
-  --text-light: rgb(255, 255, 255);
-  --text-dark: rgb(0, 0, 0);
+	--text-light: rgb(255, 255, 255);
+	--text-dark: rgb(0, 0, 0);
 }
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
+}
+html{
+  max-width: 100vw;
 }
 body {
-  height: 100vh;
+	height: 90vh;
   width: 100vw;
+  max-width: 100vw;
 }
 
 header {
-  height: 20%;
+	height: 20%;
   width: 100vw;
-  background-color: var(--accent2);
+  max-width: 100vw;
+	background-color: var(--accent2);
 }
 main {
-  height: 70%;
+	/* height: 70%; */
   width: 100%;
-  background-color: var(--main);
+	background-color: var(--main);
 }
 footer {
-  height: 10%;
-  width: 100vw;
-  background-color: var(--secondary);
+	/* height: 10%; */
+	width: 100vw;
+  max-width: 100vw;
+	background-color: var(--secondary);
 }
 
 a {
-  text-decoration: none;
-  color: var(--text-dark);
+	text-decoration: none;
+	color: var(--text-dark);
 }
