@@ -3,7 +3,6 @@
 	/** zet hier vars neer op deze manier: --<var-naam>: <var-inhoud> **/
 	--main: rgb(255, 255, 255);
 	--secondary: rgb(220, 220, 220);
-	--accent2: rgb(255, 127.5, 0);
 
 	--text-light: rgb(255, 255, 255);
 	--text-dark: rgb(0, 0, 0);
@@ -43,4 +42,38 @@ footer {
 a {
 	text-decoration: none;
 	color: var(--text-dark);
+	/* Navigation bar */
+}
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.nav2 {
+    font-size: 20px;
+    word-spacing: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+li {
+    display: inline;
+    margin-left: 40px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.tte {
+    word-spacing: normal;
+}
+#vid1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#logo {
+    float: left;
+    margin-top: 5px;
+    width: 120px;
+    height: 70px;
 }
