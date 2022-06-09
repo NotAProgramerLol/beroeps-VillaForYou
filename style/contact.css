@@ -1,15 +1,67 @@
 * {
+    font-family: Mallory, Sans-Serif;
+}
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.nav2 {
+    font-size: 20px;
+    word-spacing: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+li {
+    display: inline;
+    margin-left: 40px;
+}
+a {
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+.tte {
+    word-spacing: normal;
+}
+#vid1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#logo {
+    float: left;
+    margin-top: 5px;
+    width: 120px;
+    height: 70px;
+}
+/* Navigation bar */
+body {
+    margin: 0;
+  }
+  
+  * {
     box-sizing: border-box;
+    
+  }
+  
+  img {
+    vertical-align: middle;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
+    width: 50vw;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+  }
+  #bigpic {
+      height: 70vh;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -18,19 +70,7 @@
   }
   
   /* Next & previous buttons */
-  .prev {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
+  .prev,
   .next {
     cursor: pointer;
     position: absolute;
@@ -73,7 +113,6 @@
     background-color: #222;
     padding: 2px 16px;
     color: white;
-    width: 60%;
   }
   
   .row:after {
@@ -85,7 +124,7 @@
   /* Six columns side by side */
   .column {
     float: left;
-    width: 10%;
+    width: 16.66%;
   }
   
   /* Add a transparency effect for thumnbail images */
@@ -97,36 +136,149 @@
   .demo:hover {
     opacity: 1;
   }
-  .nav {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-}
-.nav2 {
-    font-size: 20px;
-    word-spacing: 100px;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-}
-li {
-    display: inline;
-    margin-left: 40px;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-.tte {
-    word-spacing: normal;
-}
-#vid1 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-}
-#logo {
-    float: left;
-    margin-top: 5px;
-    width: 120px;
-    height: 70px;
-}
+
+  /* GRID LAYOUT */
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        padding: 15%;
+        background-color: rgb(227, 225, 225);
+    }
+
+    /* Footer */
+    /* Footer Parent Div Styling */
+    
+    #footer {
+      
+      width:100%;
+      background-color:#fff;
+      margin: 0 auto;
+    
+    }
+    
+      
+    /* H3 Styling */
+    
+    h3.left {
+    
+      color: #000;
+      font-size: 16px;
+      font-family: Mallory, Sans-Serif;
+      font-weight: bold;
+      margin: 0 0 10px 0; 
+      text-align: left;
+    
+    }
+    
+    h3.center {
+    
+      color: #000;
+      font-size: 16px;
+      font-family: Mallory, Sans-Serif;
+      font-weight: bold;
+      margin: 0 0 10px 0; 
+      text-align: center;
+    
+    }
+      
+    
+    /* List Styling */
+    
+      ul {
+        margin: 0;
+        list-style-type: none;
+    }
+    
+        li {
+        margin: 0;
+        color: #666666;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        list-style-type: none;
+        text-align: left;
+    }
+     
+    
+    /* Utility Links Div Styling */
+    
+    #utility-links {
+    
+      width: 50%;
+      height: 150px;
+      background-color:#fff;
+      margin: 40px auto 0 auto;
+       
+    }
+    
+    .rectangle {
+      width: 1px;
+      height: 100px;
+      background: #D8D8D8;
+      margin: 0 30px 0 0;
+      float: left;
+      display: inline-block;
+    
+    }
+    
+      
+    /* Help Styling */
+    
+    .help {
+     
+      width: 30%;
+      height: 100px;
+      float: left;
+      margin: 0;
+      display: inline-block;
+     
+    }
+    
+      
+    /* Help Img Icons*/
+    
+    .help-img-icon {
+    
+      float: left;
+      margin: 0 5px 0 0;
+    
+    }
+    
+    
+    /* About Styling */
+    
+    .about {
+    
+      width: 30%;
+      height: 100px;
+      float: left;
+      margin: 0;
+      display: inline-block;
+    
+    }
+    
+    
+    /* Card Services Styling */
+    
+    .card {
+    
+      width: 30%;
+      height: 100px;
+      float: left;
+      margin: 0;
+      display: inline-block;
+    
+    }   
+
+
+    
