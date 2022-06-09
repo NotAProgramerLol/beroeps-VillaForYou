@@ -1,170 +1,90 @@
-.grid-parent {
-  /* grid start */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  /* grid end */
-  width: 97.5%;
-  height: 97.5%;
-  padding-left: 1.25%;
+.flex-container {
+	display: flex;
+	flex-wrap: nowrap;
+  gap: 10px;
 }
 
-/* .grid-item {
-  background-color: var(--secondary);
-  transition-duration: 250ms;
-  height: 100%;
-  width: 100%;
-  border-color: var(--accent2);
-  color: var(--text-dark);
-}
-.grid-item:hover {
-  box-shadow: 10px 10px 10px gray;
-  border-top: var(--secondary) solid 5px;
-  background-color: var(--accent2);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: var(--text-light);
-}
-.grid-item h1 {
-  padding: 2.5%;
-} */
-
-.villa1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.villa2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.villa3 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.villa4 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.villa5 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.villa6 {
-  grid-area: 2 / 3 / 3 / 4;
+.flex-container > div {
+	background-color: #f1f1f1;
+	width: 33.33%;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
 }
 
 /* cards code */
-
-* {
-  box-sizing: border-box;
-  line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+.container {
+	/* position: absolute;
+	left: 12%;
+	top: 12%; */
+	transform: translate(0%, 0%);
+	height: 400px;
+	width: 600px;
+	background: #f2f2f2;
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 20px 8px #d0d0d0;
 }
 
-img {
-  max-width: 100%;
+.content {
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	text-align: justify;
+	color: snow;
+	padding: 40px;
+	font-family: "Merriweather", serif;
+	background-color: #50505069;
 }
 
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background: #444;
-} */
-
-.card {
-  position: relative;
-  background: var(--secondary);
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-  padding: 2rem;
-  color: #aaa;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-.card__image-container {
-  margin: -2rem -2rem 1rem -2rem;
-}
-.card__line {
-  opacity: 0;
-  animation: LineFadeIn 0.8s 0.8s forwards ease-in;
-}
-.card__image {
-  opacity: 0;
-  animation: ImageFadeIn 0.8s 1.4s forwards;
-}
-.card__title {
-  color: white;
-  margin-top: 0;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-}
-.card__content {
-  margin-top: -1rem;
-  opacity: 0;
-  animation: ContentFadeIn 0.8s 1.6s forwards;
-}
-.card__svg {
-  position: absolute;
-  left: 0;
-  top: 115px;
+h1 {
+	font-weight: 900;
+	text-align: center;
 }
 
-@keyframes LineFadeIn {
-  0% {
-    opacity: 0;
-    d: path(
-      "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
-    );
-    stroke: #fff;
-  }
-  50% {
-    opacity: 1;
-    d: path(
-      "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
-    );
-    stroke: var(--main);
-  }
-  100% {
-    opacity: 1;
-    d: path(
-      "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
-    );
-    stroke: var(--accent2);
-  }
+h3 {
+	font-weight: 300;
 }
-@keyframes ContentFadeIn {
-  0% {
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+.flap {
+	width: 100%;
+	height: 100%;
+	background-image: url("https://cloud.funda.nl/valentina_media/159/080/225_1440.jpg");
+	background-size: 100%;
 }
-@keyframes ImageFadeIn {
-  0% {
-    transform: translate(-0.5rem, -0.5rem) scale(1.05);
-    opacity: 0;
-    filter: blur(2px);
-  }
-  50% {
-    opacity: 1;
-    filter: blur(2px);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    filter: blur(0);
-  }
+
+.flap::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background: url("https://cloud.funda.nl/valentina_media/159/080/181_720x480.jpg") white;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
 }
-header ul li {
-  display: inline;
-  margin-left: 150px;
-  font-size: 20px;
+
+.flap::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background: url("https://cloud.funda.nl/valentina_media/159/080/181_720x480.jpg") white;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
 }
-header ul {
-  min-width: 50%;
+
+.container:hover .flap::after {
+	transform: translatex(100%);
 }
-header {
+
+.container:hover .flap::before {
+	transform: translatex(-100%);
 }
