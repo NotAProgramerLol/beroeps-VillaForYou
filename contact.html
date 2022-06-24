@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <header class="nav">
+    <img id="logo" alt="logo" src="img/temporary.png" />
+    <ul class="nav2">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="./Villapagina.html">Villapagina</a></li>
+      <li class="tte"><a href="./contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+
+  <div class="mapouter">
+    <div class="gmap_canvas"><iframe width="550" height="550" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=grafisch%20lyceum%20rotterdam&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://123movies-to.org">123movies</a><br>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          height: 550px;
+          width: 550px;
+        }
+      </style>
+      <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+      <style>
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 550px;
+          width: 550px;
+        }
+      </style>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Voornaam:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Uw voornaam...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Achternaam:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Uw achternaam...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Land:</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Nederland</option>
+            <option value="canada">Spanje</option>
+            <option value="usa">Griekeland</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Bericht</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Voer hier uw bereicht..."
+            style="height:300px;resize: none; "></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Verstuur">
+      </div>
+    </form>
+  </div>
+
+  <div class="nummer">
+    <h1>Contact gegevens & personen:</h1> <br>
+    <h2> De contact personen zijn:</h2>
+    <p> Jeffrey, Mathijs en Oliver</p> <br>
+    <h2>U kunt ons contacten via:</h2>
+    <p>Het contact veld link in het beeld</p>
+    <p>Of u kunt ons bellen via ons contact nummer: 06 37927664</p>
+  </div>
+  </div>
+  <div class="bottom"> <br></div>
+  <div class="top"> <br> </div>
+
+
+  <footer class="footer">
+    <div class="footer__addr">
+
+
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Online</a>
+          </li>
+
+          <li>
+            <a href="#">Print</a>
+          </li>
+
+          <li>
+            <a href="#">Alternative Ads</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+
+          <li>
+            <a href="#">Automation</a>
+          </li>
+
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
