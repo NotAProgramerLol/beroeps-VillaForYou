@@ -28,3 +28,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+function random_3(){
+    let myrandom=Math.round(Math.random()*2);
+    let link1="https://88151.ict-lab.nl/Villa4U/Villapagina.html";
+    var link2="https://88151.ict-lab.nl/Villa4U/Villapagina2.html";
+    var link3="https://88151.ict-lab.nl/Villa4U/Villapagina3.html";
+    if (myrandom==0)
+        window.location=link1;
+    else if (myrandom==1)
+        window.location=link2;
+    else if (myrandom==2)
+        window.location=link3;
+  }

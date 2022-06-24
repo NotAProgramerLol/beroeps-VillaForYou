@@ -4,22 +4,19 @@
 .flex-container {
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 10px;
+	gap: 0px;
 }
 
 .flex-container > div {
-	background-color: #f1f1f1;
+	background-color: #000000;
 	width: 33.33%;
-	margin: 10px;
+	margin: 15px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 /* cards code */
 .container {
-	/* position: absolute;
-	left: 12%;
-	top: 12%; */
 	transform: translate(0%, 0%);
 	height: 400px;
 	width: 600px;
@@ -32,43 +29,22 @@
 
 .content {
 	position: absolute;
-	top: 50%;
+	top: 70%;
+	width: 100%;
 	transform: translatey(-20%);
 	text-align: justify;
-	color: snow;
-	padding: 40px;
-	background-color: #50505000;
+	color: rgb(255, 255, 255);
+	padding: 20px;
+	background-color: rgba(0,0,0,.5);
 }
+ .head {
+	 color: khaki;
+	 font-size: 90px;
+	 text-align: center;
+	 font-family: monospace;
+	 background-image: url("../img/1920x1080-px-clouds-sky-1423451-wallhere.com.jpg");
+ }
 
-/* .flap {
-	width: 100%;
-	height: 100%;
-	background-size: 100%;
-}
-
-.flap::before {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 50%;
-	left: 0;
-	background-position: 0px;
-	background-size: 200%;
-	background-repeat: no-repeat;
-	transition: 1s;
-}
-
-.flap::after {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 50%;
-	right: 0;
-	background-size: 200%;
-	background-position: 100%;
-	background-repeat: no-repeat;
-	transition: 1s;
-} */
 .house1 {
 	background-image: url("../villa/villa\ 4/villa\ 4\ woonkamer.jpeg");
 	width: 100%;
@@ -163,13 +139,13 @@
 }
 
 .house4 {
-	background-image: url("");
+	background-image: url("../villa/back1.png");
 	width: 100%;
 	height: 100%;
 	background-size: 100%;
 }
 .house4::before {
-	background: url("../villa/villa\ 1.jpeg") white;
+	background: url("../villa/villa1.png") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -181,7 +157,7 @@
 	transition: 1s;
 }
 .house4::after {
-	background: url("../villa/villa\ 1.jpeg") white;
+	background: url("../villa/villa1.png") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -194,13 +170,13 @@
 }
 
 .house5 {
-	background-image: url("");
+	background-image: url("../villa/back2.jpg");
 	width: 100%;
 	height: 100%;
 	background-size: 100%;
 }
 .house5::before {
-	background: url("../villa/villa\ 2.jpg") white;
+	background: url("../villa/villa2.jpg") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -212,7 +188,7 @@
 	transition: 1s;
 }
 .house5::after {
-	background: url("../villa/villa\ 2.jpg") white;
+	background: url("../villa/villa2.jpg") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -225,13 +201,13 @@
 }
 
 .house6 {
-	background-image: url("");
+	background-image: url("../villa/back3.png");
 	width: 100%;
 	height: 100%;
 	background-size: 100%;
 }
 .house6::before {
-	background: url("../villa/villa\ 3.webp") white;
+	background: url("../villa/villa3.webp") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -243,7 +219,7 @@
 	transition: 1s;
 }
 .house6::after {
-	background: url("../villa/villa\ 3.webp") white;
+	background: url("../villa/villa3.webp") white;
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -261,4 +237,61 @@
 
 .container:hover .flap::before {
 	transform: translatex(-100%);
+}
+
+footer {
+  background: rgb(231, 228, 228);
+  height: 200px;
+  width: 100vw;
+  color: rgb(0, 0, 0);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3.5rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-bottom {
+  background: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
