@@ -1,10 +1,10 @@
 * {
-	font-family: 'Courier New', Courier, monospace;
-  }
+	font-family: "Courier New", Courier, monospace;
+}
 .flex-container {
 	display: flex;
 	flex-wrap: nowrap;
-  gap: 10px;
+	gap: 10px;
 }
 
 .flex-container > div {
@@ -38,13 +38,12 @@
 	color: snow;
 	padding: 40px;
 	background-color: #50505069;
-	border-right: solid gray 2px ;
+	border-right: solid gray 2px;
 }
 
-.flap {
+/* .flap {
 	width: 100%;
 	height: 100%;
-	background-image: url("https://cloud.funda.nl/valentina_media/159/080/225_1440.jpg");
 	background-size: 100%;
 }
 
@@ -54,7 +53,6 @@
 	height: 100%;
 	width: 50%;
 	left: 0;
-	background: url("https://cloud.funda.nl/valentina_media/159/080/181_720x480.jpg") white;
 	background-position: 0px;
 	background-size: 200%;
 	background-repeat: no-repeat;
@@ -67,7 +65,191 @@
 	height: 100%;
 	width: 50%;
 	right: 0;
-	background: url("https://cloud.funda.nl/valentina_media/159/080/181_720x480.jpg") white;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+} */
+.house1 {
+	background-image: url("../villa/villa\ 4/villa\ 4\ woonkamer.jpeg");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house1::before {
+	background: url("../villa/villa\ 4/villa\ 4.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house1::after {
+	background: url("../villa/villa\ 4/villa\ 4.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.house2 {
+	background-image: url("../villa/villa\ 5/villa\ 5\ slaapkamer.jpeg");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house2::before {
+	background: url("../villa/villa\ 5/villa\ 5.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house2::after {
+	background: url("../villa/villa\ 5/villa\ 5.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.house3 {
+	background-image: url("../villa/villa\ 6/villa\ 6\ keuken.jpeg");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house3::before {
+	background: url("../villa/villa\ 6/villa\ 6.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house3::after {
+	background: url("../villa/villa\ 6/villa\ 6.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.house4 {
+	background-image: url("");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house4::before {
+	background: url("../villa/villa\ 1.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house4::after {
+	background: url("../villa/villa\ 1.jpeg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.house5 {
+	background-image: url("");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house5::before {
+	background: url("../villa/villa\ 2.jpg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house5::after {
+	background: url("../villa/villa\ 2.jpg") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
+	background-size: 200%;
+	background-position: 100%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+
+.house6 {
+	background-image: url("");
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.house6::before {
+	background: url("../villa/villa\ 3.webp") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	background-position: 0px;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	transition: 1s;
+}
+.house6::after {
+	background: url("../villa/villa\ 3.webp") white;
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	right: 0;
 	background-size: 200%;
 	background-position: 100%;
 	background-repeat: no-repeat;
